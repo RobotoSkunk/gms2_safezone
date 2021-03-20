@@ -1,7 +1,6 @@
 # GMS2 - RobotoSkunk's Safezone
-A script that adds multi-resolution support in Game Maker Studio 2
-
-The script adjusts the GUI surface and the application_surface to suit the resolution you have set
+A script that adds multi-resolution support in Game Maker Studio 2.
+The script adjusts the GUI surface and the application_surface to suit the resolution you have set.
 
 ## Installation
 [Go to the folder where the script is located](https://github.com/RobotoSkunk/gms2_safezone/blob/main/src/scripts/rs_safezone/rs_safezone.gml) and add it to your project, then configure the project to support window resizes and keep the aspect ratio (important).
@@ -27,6 +26,7 @@ Where...
 
 ### Example
 ```gml
+//Inside a step event
 rs_safezone(1280, 720);
 camera_set_view_size(view_camera[0], rs_ideal_width, rs_ideal_height);
 ```
