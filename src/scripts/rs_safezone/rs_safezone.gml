@@ -1,17 +1,15 @@
-///@func rs_safezone(width, height, camera_index, [quality]);
+///@func rs_safezone(width, height, [quality]);
 ///@desc adjust perfectly the screen game to a given safe zone with a width and height.
-///@param {real} width width of the safe zone.
-///@param {real} height height of the safe zone.
-///@param {real} camera_index the camera index.
-///@param {real} [quality] the quality of the application_surface.
-var width, height, camera_index, quality,
+///@param {real} width Width of the safe zone.
+///@param {real} height Height of the safe zone.
+///@param {real} [quality] The quality of the application_surface.
+var width, height, quality,
 	window_width, window_height, scaleX, scaleY, aspect_ratio;
 globalvar rs_actual_width, rs_actual_height, rs_ideal_width, rs_ideal_height;
 
 width = argument0;
 height = argument1;
-camera_index = argument2;
-quality = (argument_count > 3 ? clamp(argument[3], 0, 1) : 1);
+quality = (argument_count > 2 ? clamp(argument[2], 0, 1) : 1);
 aspect_ratio = width/height;
 
 //Get window/display size
