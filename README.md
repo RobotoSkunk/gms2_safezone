@@ -3,8 +3,8 @@ A script that adds multi-resolution support in Game Maker Studio 2
 
 The script adjusts the GUI surface and the application_surface to suit the resolution you have set
 
-##Installation
-[Go to the folder where the script is located](https://github/RobotoSkunk/gms2_safezone/src/scripts/rs_safezone/rs_safezone.gml) and add it to your project, then configure the project to support window resizes and keep the aspect ratio (important).
+## Installation
+[Go to the folder where the script is located](https://github.com/RobotoSkunk/gms2_safezone/blob/main/src/scripts/rs_safezone/rs_safezone.gml) and add it to your project, then configure the project to support window resizes and keep the aspect ratio (important).
 
 ## How to use
 Just call the script inside a single object in the step event to start working.
