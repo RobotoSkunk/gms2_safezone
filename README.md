@@ -11,20 +11,25 @@ Just call the script inside a single object in the step event to start working.
 The function returns the aspect ratio of the current resolution.
 
 Additionally, it automatically generates four read-only global variables to use:
-* **rs_ideal_width** - The new width given by the script
-* **rs_ideal_height** - The new height given by the script
-* **rs_actual_width** - The current width of the game window
-* **rs_actual_height** - The current height of the game window
+* **rs_ideal_width** - The new width given by the script.
+* **rs_ideal_height** - The new height given by the script.
+* **rs_actual_width** - The current width of the game window.
+* **rs_actual_height** - The current height of the game window.
 
 The arguments that the function takes are the following
 ```gml
-rs_safezone(width, height, camera_index, [quality])
+rs_safezone(width, height, [quality])
 ```
 Where...
 * **width** - Width of the safe zone.
 * **height** - Height of the safe zone.
-* **camera_index** - The camera index.
 * **\[quality]** - The quality of the application_surface.
+
+### Example
+```gml
+rs_safezone(1280, 720);
+camera_set_view_size(view_camera[0], rs_ideal_width, rs_ideal_height);
+```
 
 ## Bugs
 Use sensible aspect ratios because Game Maker will return a surface error if you use dimensions that Game Maker doesn't support.
